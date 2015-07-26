@@ -1,13 +1,13 @@
 
 # Angular-Test
-This is a Test Angular app written in ES6 compiled with babel
+This is a Test Angular app written in ES6 compiled with babel and using angular material
 
-Steps to run the application in dev
+# Steps to run app in dev 
 npm install 
 npm run start
 
-# Steps to minify app
-npm run webpackproduction
+# Steps to minify app and run in production
+npm run prod
 
 # Navigate to localhost:8080 and see the results
 
