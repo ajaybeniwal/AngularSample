@@ -1,0 +1,42 @@
+<html>
+<head>
+ <head>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1" />
+    <style>
+    .add-new{
+      position: fixed;
+      right:5%;
+      top:30px;
+      z-index: 3000;
+    }
+    .md-responsive{
+      max-width: 100%;
+    }
+    </style>
+  </head>
+</head>
+<body layout="column">
+    <md-toolbar layout="row">
+      <div class="md-toolbar-tools">
+        <md-button ng-click="toggleSidenav('left')" hide-gt-sm class="md-icon-button">
+          <md-icon aria-label="Menu" md-svg-icon="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68133/menu.svg"></md-icon>
+        </md-button>
+        <h1>Student Profile App</h1>
+      </div>
+    </md-toolbar>
+    <div layout="row" flex>
+        <div layout="column" flex id="content">
+            <md-content layout="column" flex class="md-padding">
+            <div ng-view></div>
+            </md-content>
+        </div>
+    </div>
+<script type="text/javascript" src="app/build/vendor.bundle.js"></script>
+<script type="text/javascript" src="app/build/bundle.js"></script>
+
+</body>
+</html>

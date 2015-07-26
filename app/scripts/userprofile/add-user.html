@@ -1,0 +1,26 @@
+<div>
+	<md-input-container md-no-float="">
+      <!-- Use floating label instead of placeholder -->
+      <label>Name</label>
+      <input ng-model="vm.user.name" type="text">
+    </md-input-container>
+
+    <md-input-container md-no-float="">
+      <label>Phone</label>
+      <input ng-model="vm.user.phone" type="text">
+    </md-input-container>
+
+    <md-input-container md-no-float=""> 
+      <!-- Use floating placeholder instead of label -->
+      <label>EMail</label>
+      <input ng-model="vm.user.email" type="text">
+    </md-input-container>
+
+    <md-input-container md-no-float="">
+      <label>Adress</label>
+      <input ng-model="vm.user.address" type="text">
+    </md-input-container>
+    <md-input-container>
+     <md-button class="md-raised md-primary" ng-click="vm.save()">SAVE</md-button>
+     </md-input-container>
+</div>

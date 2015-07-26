@@ -1,0 +1,23 @@
+{
+  "name": "Angular-ES6-AppleStoreTopSellingApps",
+  "version": "0.2.0",
+  "description": "A sample Angular app built with ES6,Babel and webpack",
+  "dependencies": {
+    "angular":"latest",
+    "angular-route":"latest",
+    "angular-aria":"latest",
+    "angular-animate":"latest",
+    "angular-material":"latest"
+  },
+  "scripts":{
+    "dev":"webpack-dev-server --progress --colors",
+    "prod":"NODE_ENV=production webpack-dev-server --progress --colors"
+  },
+  "devDependencies": {
+    "babel-core": "latest",
+    "babel-loader": "latest",
+    "webpack": "latest",
+    "webpack-dev-server": "latest"
+  }
+  
+}

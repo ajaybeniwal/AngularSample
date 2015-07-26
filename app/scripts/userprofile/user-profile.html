@@ -1,0 +1,35 @@
+<div layout="row" layout-sm="column" layout-align="center center" ng-if="vm.showSpinner">
+      <md-progress-circular class="md-accent" md-mode="indeterminate"></md-progress-circular>
+  </div>
+<div layout="row" layout-sm="column">
+<div layout="row" flex-sm="100" flex-md="33" flex="33" layout-align-sm="center center">
+<img ng-src="{{vm.user.user.picture.large}}" class="md-avatar md-responsive" />
+</div>
+<div layout="column" flex-sm="100" flex-md="66"  flex="66" layout-padding ng-if="vm.user.user.name"> 
+<h4>Basic Information</h4>
+<md-input-container md-no-float="">
+      <!-- Use floating label instead of placeholder -->
+      <label>Name</label>
+      <input ng-model="vm.user.user.name.first" type="text">
+    </md-input-container>
+
+    <md-input-container md-no-float="">
+      <label>Phone</label>
+      <input ng-model="vm.user.user.cell" type="text">
+    </md-input-container>
+
+    <md-input-container md-no-float=""> 
+      <!-- Use floating placeholder instead of label -->
+      <label>EMail</label>
+      <input ng-model="vm.user.user.email" type="text">
+    </md-input-container>
+
+    <md-input-container md-no-float="">
+      <label>Adress</label>
+      <input ng-model="vm.user.user.location.street" type="text">
+    </md-input-container>
+    <md-input-container>
+     <md-button class="md-raised md-primary" ng-click="vm.save()">SAVE</md-button>
+     </md-input-container>
+</div>
+</div>
